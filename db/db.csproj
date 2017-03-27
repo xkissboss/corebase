@@ -13,4 +13,8 @@
     <Folder Include="Model\custom\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\common\common.csproj" />
+  </ItemGroup>
+
 </Project>
