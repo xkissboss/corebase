@@ -3,3 +3,6 @@
 ################################################################################
 
 /corebase/bin/Debug/netcoreapp1.1
+/corebase/obj
+/corebase/obj
+/corebase/obj
