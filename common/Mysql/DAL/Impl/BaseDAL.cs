@@ -80,7 +80,7 @@ namespace common.Mysql.DAL.Impl
         {
             string fd = fields.Length > 0 ? string.Join(",", fields) : "*";
             string sql = string.Format("select {1} from {0} where {2} = @pk", TableName(), fd, PrivateKey);
-            return DbConn().GetConn().QueryFirst<T>(sql, new { pk = pk });
+            return DbConn().GetConn().QueryFirstOrDefault<T>(sql, new { pk = pk });
         }
 
         public List<T> FindByIds(List<PK> pkList, params string[] fields)
@@ -126,7 +126,7 @@ namespace common.Mysql.DAL.Impl
         public T FindByWhere(Template template)
         {
             if (template == null || string.IsNullOrEmpty(template.RawSql)) return null;
-            return DbConn().GetConn().QueryFirst<T>(template.RawSql, template.Parameters);
+            return DbConn().GetConn().QueryFirstOrDefault<T>(template.RawSql, template.Parameters);
         }
 
         public List<T> FindListByWhere(Template template)

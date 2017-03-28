@@ -5,11 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="BLL\build\" />
-    <Folder Include="BLL\custom\" />
-    <Folder Include="DAL\build\" />
-    <Folder Include="DAL\custom\" />
-    <Folder Include="Model\build\" />
     <Folder Include="Model\custom\" />
   </ItemGroup>
 

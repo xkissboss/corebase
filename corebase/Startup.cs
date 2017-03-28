@@ -7,6 +7,11 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using common.Mysql.Utils;
+using db.DAL.Impl;
+using db.DAL;
+using db.BLL;
+using db.BLL.Impl;
 
 namespace corebase
 {
@@ -29,6 +34,12 @@ namespace corebase
         {
             // Add framework services.
             services.AddMvc();
+            // 数据库连接注入
+            services.AddScoped<IDbConn, MySqlDbConnection>();
+
+            services.AddScoped<IStudentDAL, StudentDAL>();
+
+            services.AddScoped<IStudentBLL, StudentBLL>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
