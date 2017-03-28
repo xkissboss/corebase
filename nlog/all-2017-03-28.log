@@ -10,3 +10,196 @@
 2017-03-28 14:46:46.7864|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|INFO|Executing JsonResult, writing value { code = 0, message = , data = db.Model.Student }. 
 2017-03-28 14:46:46.8635|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action corebase.Controllers.ValuesController.Get (corebase) in 2567.371ms 
 2017-03-28 14:46:46.8795|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 2606.8122ms 200 application/json; charset=utf-8 
+2017-03-28 15:20:20.7626|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/api/values   
+2017-03-28 15:20:21.2379|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method corebase.Controllers.ValuesController.Get (corebase) with arguments ((null)) - ModelState is Valid 
+2017-03-28 15:20:21.2879|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-03-28 15:20:21.3995|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action corebase.Controllers.ValuesController.Get (corebase) in 253.53ms 
+2017-03-28 15:20:21.4405|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 706.7307ms 200 application/json; charset=utf-8 
+2017-03-28 15:20:21.4761|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/favicon.ico   
+2017-03-28 15:20:21.5126|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 35.1652ms 404  
+2017-03-28 15:20:32.7642|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/   
+2017-03-28 15:20:32.8002|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2017-03-28 15:20:32.8437|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 73.452ms 200 text/html 
+2017-03-28 15:20:32.8692|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/css/screen.css   
+2017-03-28 15:20:32.9403|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/lib/jquery-1.8.0.min.js   
+2017-03-28 15:20:32.9683|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/css/reset.css   
+2017-03-28 15:20:32.9683|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/css/screen.css'. Physical path: 'N/A' 
+2017-03-28 15:20:32.9683|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/lib/object-assign-pollyfill.js   
+2017-03-28 15:20:32.9683|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/css/typography.css   
+2017-03-28 15:20:32.9793|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/css/reset.css'. Physical path: 'N/A' 
+2017-03-28 15:20:32.9793|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/jquery-1.8.0.min.js'. Physical path: 'N/A' 
+2017-03-28 15:20:33.0469|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/object-assign-pollyfill.js'. Physical path: 'N/A' 
+2017-03-28 15:20:33.0469|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 179.8723ms 200 text/css 
+2017-03-28 15:20:33.1039|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 189.0023ms 200 text/css 
+2017-03-28 15:20:33.1244|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/css/typography.css'. Physical path: 'N/A' 
+2017-03-28 15:20:33.1244|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/lib/jquery.slideto.min.js   
+2017-03-28 15:20:33.1244|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 231.9591ms 200 application/javascript 
+2017-03-28 15:20:33.1574|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/lib/jquery.wiggle.min.js   
+2017-03-28 15:20:33.1690|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/lib/jquery.ba-bbq.min.js   
+2017-03-28 15:20:33.1690|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 223.2648ms 200 text/css 
+2017-03-28 15:20:33.2075|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/lib/handlebars-4.0.5.js   
+2017-03-28 15:20:33.2395|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/jquery.wiggle.min.js'. Physical path: 'N/A' 
+2017-03-28 15:20:33.2650|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/jquery.slideto.min.js'. Physical path: 'N/A' 
+2017-03-28 15:20:33.2650|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/jquery.ba-bbq.min.js'. Physical path: 'N/A' 
+2017-03-28 15:20:33.2830|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/lib/lodash.min.js   
+2017-03-28 15:20:33.3151|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/handlebars-4.0.5.js'. Physical path: 'N/A' 
+2017-03-28 15:20:33.3416|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 162.3559ms 200 application/javascript 
+2017-03-28 15:20:33.4206|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 194.0527ms 200 application/javascript 
+2017-03-28 15:20:33.4437|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 211.4344ms 200 application/javascript 
+2017-03-28 15:20:33.4707|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/lodash.min.js'. Physical path: 'N/A' 
+2017-03-28 15:20:33.5002|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/lib/backbone-min.js   
+2017-03-28 15:20:33.5292|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 220.8727ms 200 application/javascript 
+2017-03-28 15:20:33.5732|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/lib/highlight.9.1.0.pack.js   
+2017-03-28 15:20:33.5732|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/swagger-ui.min.js   
+2017-03-28 15:20:33.5908|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 264.086ms 200 application/javascript 
+2017-03-28 15:20:33.5908|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/backbone-min.js'. Physical path: 'N/A' 
+2017-03-28 15:20:33.5908|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/lib/highlight.9.1.0.pack_extended.js   
+2017-03-28 15:20:33.6073|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/swagger-ui.min.js'. Physical path: 'N/A' 
+2017-03-28 15:20:33.5908|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/highlight.9.1.0.pack.js'. Physical path: 'N/A' 
+2017-03-28 15:20:33.6418|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/lib/jsoneditor.min.js   
+2017-03-28 15:20:33.6418|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/highlight.9.1.0.pack_extended.js'. Physical path: 'N/A' 
+2017-03-28 15:20:33.6853|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 802.7866ms 200 application/javascript 
+2017-03-28 15:20:33.7133|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/jsoneditor.min.js'. Physical path: 'N/A' 
+2017-03-28 15:20:33.7304|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 177.463ms 200 application/javascript 
+2017-03-28 15:20:33.7304|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 204.2773ms 200 application/javascript 
+2017-03-28 15:20:33.7624|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/lib/swagger-oauth.js   
+2017-03-28 15:20:33.7304|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 130.768ms 200 application/javascript 
+2017-03-28 15:20:33.8224|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 149.6733ms 200 application/javascript 
+2017-03-28 15:20:33.8594|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/lib/marked.js   
+2017-03-28 15:20:33.8720|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 347.9345ms 200 application/javascript 
+2017-03-28 15:20:33.9080|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/marked.js'. Physical path: 'N/A' 
+2017-03-28 15:20:33.9080|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/swagger-oauth.js'. Physical path: 'N/A' 
+2017-03-28 15:20:33.9270|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 100.0697ms 200 application/javascript 
+2017-03-28 15:20:33.9350|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 203.8641ms 200 application/javascript 
+2017-03-28 15:20:33.9350|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/images/logo_small.png   
+2017-03-28 15:20:33.9500|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/css/print.css   
+2017-03-28 15:20:33.9500|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/images/logo_small.png'. Physical path: 'N/A' 
+2017-03-28 15:20:33.9700|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/css/print.css'. Physical path: 'N/A' 
+2017-03-28 15:20:33.9700|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/v1/swagger.json   
+2017-03-28 15:20:33.9815|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 35.0394ms 200 image/png 
+2017-03-28 15:20:33.9815|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 38.6085ms 200 text/css 
+2017-03-28 15:20:34.0076|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/images/favicon-16x16.png   
+2017-03-28 15:20:34.0211|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/images/favicon-16x16.png'. Physical path: 'N/A' 
+2017-03-28 15:20:34.0346|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 27.4221ms 200 image/png 
+2017-03-28 15:20:34.0476|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/images/favicon-32x32.png   
+2017-03-28 15:20:34.0641|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/images/favicon-32x32.png'. Physical path: 'N/A' 
+2017-03-28 15:20:34.0791|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 31.5117ms 200 image/png 
+2017-03-28 15:20:34.1987|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 229.2932ms 200 application/json 
+2017-03-28 15:20:38.0548|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/images/throbber.gif   
+2017-03-28 15:20:38.0708|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/images/throbber.gif'. Physical path: 'N/A' 
+2017-03-28 15:20:38.0828|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/images/favicon-16x16.png   
+2017-03-28 15:20:38.1368|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 39.6015ms 200 image/gif 
+2017-03-28 15:20:38.1368|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /images/favicon-16x16.png was not modified 
+2017-03-28 15:20:38.1643|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 83.1171ms 304 image/png 
+2017-03-28 15:20:41.2772|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/api/Values   
+2017-03-28 15:20:41.3092|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method corebase.Controllers.ValuesController.Get (corebase) with arguments ((null)) - ModelState is Valid 
+2017-03-28 15:20:41.3347|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-03-28 15:20:41.3462|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action corebase.Controllers.ValuesController.Get (corebase) in 50.4717ms 
+2017-03-28 15:20:41.3613|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 84.1315ms 200 application/json; charset=utf-8 
+2017-03-28 15:20:46.1899|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/images/favicon-16x16.png   
+2017-03-28 15:20:46.2075|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /images/favicon-16x16.png was not modified 
+2017-03-28 15:20:46.2435|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 51.9033ms 304 image/png 
+2017-03-28 15:20:49.0362|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 POST http://localhost:57589/api/Values application/json 4 
+2017-03-28 15:20:49.1973|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method corebase.Controllers.ValuesController.Post (corebase) with arguments () - ModelState is Invalid 
+2017-03-28 15:20:49.2128|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action corebase.Controllers.ValuesController.Post (corebase) in 156.8145ms 
+2017-03-28 15:20:49.2298|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 193.712ms 200  
+2017-03-28 15:21:06.9180|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 POST http://localhost:57589/api/Values application/json 4 
+2017-03-28 15:21:06.9565|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method corebase.Controllers.ValuesController.Post (corebase) with arguments () - ModelState is Invalid 
+2017-03-28 15:21:12.8327|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action corebase.Controllers.ValuesController.Post (corebase) in 5894.2177ms 
+2017-03-28 15:21:12.8607|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 5938.3918ms 200  
+2017-03-28 15:21:22.2577|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/images/favicon-16x16.png   
+2017-03-28 15:21:22.2807|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /images/favicon-16x16.png was not modified 
+2017-03-28 15:21:22.3167|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 60.3112ms 304 image/png 
+2017-03-28 15:21:28.0334|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/images/favicon-16x16.png   
+2017-03-28 15:21:28.0569|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /images/favicon-16x16.png was not modified 
+2017-03-28 15:21:28.0869|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 55.4075ms 304 image/png 
+2017-03-28 15:21:31.0010|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/images/favicon-16x16.png   
+2017-03-28 15:21:31.0215|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /images/favicon-16x16.png was not modified 
+2017-03-28 15:21:31.0490|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 49.5261ms 304 image/png 
+2017-03-28 15:21:33.8360|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/api/Values/3   
+2017-03-28 15:21:33.9050|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method corebase.Controllers.ValuesController.Get (corebase) with arguments (3) - ModelState is Valid 
+2017-03-28 15:21:37.2783|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|INFO|Executing JsonResult, writing value { code = 99, message = 记录不存在, data =  }. 
+2017-03-28 15:21:37.3058|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action corebase.Controllers.ValuesController.Get (corebase) in 3438.0958ms 
+2017-03-28 15:21:37.3313|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 3493.7567ms 200 application/json; charset=utf-8 
+2017-03-28 15:22:38.3106|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/api/values   
+2017-03-28 15:22:38.7844|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method corebase.Controllers.ValuesController.Get (corebase) with arguments ((null)) - ModelState is Valid 
+2017-03-28 15:22:38.8379|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-03-28 15:22:38.9615|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action corebase.Controllers.ValuesController.Get (corebase) in 271.4318ms 
+2017-03-28 15:22:39.0031|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 725.7208ms 200 application/json; charset=utf-8 
+2017-03-28 15:22:39.0401|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/favicon.ico   
+2017-03-28 15:22:39.0746|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 34.7636ms 404  
+2017-03-28 15:22:46.4781|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/   
+2017-03-28 15:22:46.5136|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/index.html'. Physical path: 'N/A' 
+2017-03-28 15:22:46.5431|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 66.9121ms 200 text/html 
+2017-03-28 15:22:46.5782|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/css/reset.css   
+2017-03-28 15:22:46.5782|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/css/screen.css   
+2017-03-28 15:22:46.5782|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/lib/object-assign-pollyfill.js   
+2017-03-28 15:22:46.5782|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/lib/jquery-1.8.0.min.js   
+2017-03-28 15:22:46.5952|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/css/typography.css   
+2017-03-28 15:22:46.5952|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /css/reset.css was not modified 
+2017-03-28 15:22:46.6082|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /css/screen.css was not modified 
+2017-03-28 15:22:46.6082|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/object-assign-pollyfill.js was not modified 
+2017-03-28 15:22:46.6312|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/jquery-1.8.0.min.js was not modified 
+2017-03-28 15:22:46.6312|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /css/typography.css was not modified 
+2017-03-28 15:22:46.6662|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 105.7538ms 304 text/css 
+2017-03-28 15:22:46.7143|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 114.71ms 304 application/javascript 
+2017-03-28 15:22:46.7363|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 102.1353ms 304 text/css 
+2017-03-28 15:22:46.7703|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/lib/jquery.ba-bbq.min.js   
+2017-03-28 15:22:46.7778|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 177.3766ms 304 text/css 
+2017-03-28 15:22:46.7778|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 162.6572ms 304 application/javascript 
+2017-03-28 15:22:46.8224|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/lib/handlebars-4.0.5.js   
+2017-03-28 15:22:46.8224|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/jquery.ba-bbq.min.js was not modified 
+2017-03-28 15:22:46.8224|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/lib/backbone-min.js   
+2017-03-28 15:22:46.8604|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/lib/jquery.wiggle.min.js   
+2017-03-28 15:22:46.8604|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/lib/lodash.min.js   
+2017-03-28 15:22:46.8714|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/handlebars-4.0.5.js was not modified 
+2017-03-28 15:22:46.9019|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/backbone-min.js was not modified 
+2017-03-28 15:22:46.9169|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 136.2345ms 304 application/javascript 
+2017-03-28 15:22:46.9169|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/jquery.wiggle.min.js was not modified 
+2017-03-28 15:22:46.9464|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 137.5926ms 304 application/javascript 
+2017-03-28 15:22:47.0140|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 97.7508ms 304 application/javascript 
+2017-03-28 15:22:47.0140|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/swagger-ui.min.js   
+2017-03-28 15:22:47.0710|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 233.1053ms 304 application/javascript 
+2017-03-28 15:22:47.1010|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/lib/highlight.9.1.0.pack.js   
+2017-03-28 15:22:47.0740|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/lodash.min.js was not modified 
+2017-03-28 15:22:47.1010|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/lib/highlight.9.1.0.pack_extended.js   
+2017-03-28 15:22:47.1035|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/lib/jsoneditor.min.js   
+2017-03-28 15:22:47.1256|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/highlight.9.1.0.pack.js was not modified 
+2017-03-28 15:22:47.1035|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /swagger-ui.min.js was not modified 
+2017-03-28 15:22:47.1511|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 315.3202ms 304 application/javascript 
+2017-03-28 15:22:47.2006|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/highlight.9.1.0.pack_extended.js was not modified 
+2017-03-28 15:22:47.2181|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/jsoneditor.min.js was not modified 
+2017-03-28 15:22:47.2642|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 191.2729ms 304 application/javascript 
+2017-03-28 15:22:47.2902|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/lib/marked.js   
+2017-03-28 15:22:47.3052|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 215.4644ms 304 application/javascript 
+2017-03-28 15:22:47.3187|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/lib/swagger-oauth.js   
+2017-03-28 15:22:47.3472|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 201.913ms 304 application/javascript 
+2017-03-28 15:22:47.3717|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 237.2363ms 304 application/javascript 
+2017-03-28 15:22:47.3988|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/swagger-oauth.js was not modified 
+2017-03-28 15:22:47.4248|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/marked.js was not modified 
+2017-03-28 15:22:47.4513|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/lib/jquery.slideto.min.js   
+2017-03-28 15:22:47.4818|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 164.4291ms 304 application/javascript 
+2017-03-28 15:22:47.5243|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 223.9792ms 304 application/javascript 
+2017-03-28 15:22:47.5268|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/jquery.slideto.min.js was not modified 
+2017-03-28 15:22:47.5268|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/images/logo_small.png   
+2017-03-28 15:22:47.5574|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 122.5156ms 304 application/javascript 
+2017-03-28 15:22:47.5574|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /images/logo_small.png was not modified 
+2017-03-28 15:22:47.5819|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 43.5543ms 304 image/png 
+2017-03-28 15:22:47.5999|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/css/print.css   
+2017-03-28 15:22:47.6149|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /css/print.css was not modified 
+2017-03-28 15:22:47.6309|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 31.4064ms 304 text/css 
+2017-03-28 15:22:47.7340|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/v1/swagger.json   
+2017-03-28 15:22:47.7500|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/images/favicon-16x16.png   
+2017-03-28 15:22:47.7670|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /images/favicon-16x16.png was not modified 
+2017-03-28 15:22:47.7845|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 37.5901ms 304 image/png 
+2017-03-28 15:22:47.9431|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 209.2572ms 200 application/json 
+2017-03-28 15:22:50.0369|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/images/throbber.gif   
+2017-03-28 15:22:50.0580|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /images/throbber.gif was not modified 
+2017-03-28 15:22:50.0580|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/swagger/images/favicon-16x16.png   
+2017-03-28 15:22:50.0810|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 43.3259ms 304 image/gif 
+2017-03-28 15:22:50.0810|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /images/favicon-16x16.png was not modified 
+2017-03-28 15:22:50.1070|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 49.155ms 304 image/png 
+2017-03-28 15:22:52.8414|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 POST http://localhost:57589/api/Values application/x-www-form-urlencoded 10 
+2017-03-28 15:22:52.9885|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method corebase.Controllers.ValuesController.Post (corebase) with arguments (sfsg) - ModelState is Valid 
+2017-03-28 15:22:55.6869|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action corebase.Controllers.ValuesController.Post (corebase) in 2827.5727ms 
+2017-03-28 15:22:55.7075|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 2866.0694ms 200  

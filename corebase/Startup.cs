@@ -14,6 +14,7 @@ using db.BLL;
 using db.BLL.Impl;
 using NLog.Extensions.Logging;
 using System.Text;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace corebase
 {
@@ -27,9 +28,12 @@ namespace corebase
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
+            this.Env = env;
         }
 
         public IConfigurationRoot Configuration { get; }
+
+        public IHostingEnvironment Env { get; private set; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -42,6 +46,15 @@ namespace corebase
             services.AddScoped<IStudentDAL, StudentDAL>();
 
             services.AddScoped<IStudentBLL, StudentBLL>();
+
+
+            if (this.Env.IsDevelopment())
+            {
+                services.AddSwaggerGen(c =>
+                {
+                    c.SwaggerDoc("v1", new Info { Title = "Api", Version = "v1" });
+                });
+            }
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,6 +69,15 @@ namespace corebase
             env.ConfigureNLog("nlog.config");
 
             app.UseMvc();
+
+            if (this.Env.IsDevelopment())
+            {
+                app.UseSwagger();
+                app.UseSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Api");
+                });
+            }
         }
     }
 }

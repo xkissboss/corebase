@@ -44,7 +44,7 @@ namespace corebase.Controllers
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody]string value)
+        public void Post([FromForm]string value)
         {
         }
 
