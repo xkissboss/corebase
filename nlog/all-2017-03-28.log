@@ -1,0 +1,12 @@
+2017-03-28 14:46:39.8645|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/api/values   
+2017-03-28 14:46:40.3759|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method corebase.Controllers.ValuesController.Get (corebase) with arguments ((null)) - ModelState is Valid 
+2017-03-28 14:46:40.4254|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|INFO|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-03-28 14:46:40.6165|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action corebase.Controllers.ValuesController.Get (corebase) in 327.9296ms 
+2017-03-28 14:46:40.6521|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 814.3154ms 200 application/json; charset=utf-8 
+2017-03-28 14:46:40.6841|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/favicon.ico   
+2017-03-28 14:46:40.7036|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 20.226ms 404  
+2017-03-28 14:46:44.2732|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/1.1 GET http://localhost:57589/api/values/1   
+2017-03-28 14:46:44.3893|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method corebase.Controllers.ValuesController.Get (corebase) with arguments (1) - ModelState is Valid 
+2017-03-28 14:46:46.7864|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|INFO|Executing JsonResult, writing value { code = 0, message = , data = db.Model.Student }. 
+2017-03-28 14:46:46.8635|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action corebase.Controllers.ValuesController.Get (corebase) in 2567.371ms 
+2017-03-28 14:46:46.8795|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 2606.8122ms 200 application/json; charset=utf-8 

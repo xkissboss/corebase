@@ -12,6 +12,8 @@ using db.DAL.Impl;
 using db.DAL;
 using db.BLL;
 using db.BLL.Impl;
+using NLog.Extensions.Logging;
+using System.Text;
 
 namespace corebase
 {
@@ -45,8 +47,13 @@ namespace corebase
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+            Console.OutputEncoding = Encoding.GetEncoding("GB2312");
+            Console.InputEncoding = Encoding.GetEncoding("GB2312");
+
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
-            loggerFactory.AddDebug();
+            loggerFactory.AddNLog().AddDebug();
+            env.ConfigureNLog("nlog.config");
 
             app.UseMvc();
         }

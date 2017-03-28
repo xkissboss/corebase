@@ -15,7 +15,7 @@ namespace corebase.Controllers
 
         public BaseController(ILoggerFactory factory, IServiceProvider svp)
         {
-            if (this._logger != null)
+            if (this._logger == null)
                 this._logger = factory.CreateLogger(this.GetType());
         }
     }
