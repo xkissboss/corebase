@@ -84,6 +84,17 @@ namespace corebase
             loggerFactory.AddNLog().AddDebug();
             env.ConfigureNLog("nlog.config");
 
+            if (this.Env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseExceptionHandler("/Home/Error"); // todo: 正式服需要替换成统一的错误地址
+            }
+
+            app.UseStaticFiles(); // 静态文件
+
             app.UseSession();
             app.UseMvc();
 
