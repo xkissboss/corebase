@@ -16,6 +16,8 @@ using NLog.Extensions.Logging;
 using System.Text;
 using Swashbuckle.AspNetCore.Swagger;
 using common.CSRedis;
+using Microsoft.Extensions.Caching.Distributed;
+using Microsoft.Extensions.Caching.Redis;
 
 namespace corebase
 {
@@ -57,6 +59,18 @@ namespace corebase
                     c.SwaggerDoc("v1", new Info { Title = "Api", Version = "v1" });
                 });
             }
+
+
+            services.AddSingleton<IDistributedCache>(new RedisCache());
+
+            services.AddSession(option =>
+            {
+                option.IdleTimeout = TimeSpan.FromDays(30);
+                option.CookieHttpOnly = true;
+                option.CookieName = "session";
+            });
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -70,6 +84,7 @@ namespace corebase
             loggerFactory.AddNLog().AddDebug();
             env.ConfigureNLog("nlog.config");
 
+            app.UseSession();
             app.UseMvc();
 
             if (this.Env.IsDevelopment())

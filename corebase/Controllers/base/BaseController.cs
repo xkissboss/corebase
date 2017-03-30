@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Http;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -17,6 +18,14 @@ namespace corebase.Controllers
         {
             if (this._logger == null)
                 this._logger = factory.CreateLogger(this.GetType());
+        }
+
+        protected ISession Session
+        {
+            get
+            {
+                return HttpContext.Session;
+            }
         }
     }
 }

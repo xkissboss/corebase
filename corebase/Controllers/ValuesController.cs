@@ -8,6 +8,7 @@ using db.BLL;
 using corebase.Util;
 using db.Model;
 using common.CSRedis;
+using Microsoft.AspNetCore.Http;
 
 namespace corebase.Controllers
 {
@@ -27,6 +28,7 @@ namespace corebase.Controllers
         public IEnumerable<string> Get()
         {
             RedisHelper.Set("hello", "world");
+            Session.SetString("hello", "world");
             return new string[] { "value1", "value2" };
 
         }
@@ -37,7 +39,7 @@ namespace corebase.Controllers
         {
 
             string hello = RedisHelper.Get("hello");
-
+            string sHello = Session.GetString("hello");
             if (id < 1)
                 return APIReturn.BuildFail("id正确");
             Student s = RedisHelper.GetEntity<Student>(id.ToString());
