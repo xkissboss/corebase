@@ -27,6 +27,8 @@ namespace common.CSRedis
                 if (!string.IsNullOrEmpty(pass)) rc.Auth(pass);
                 if (database > 0) rc.Select(database);
             };
+
+            RedisHelper.Set("connection_mysql", cfg["ConnectionStrings:mysql"]);
         }
     }
 

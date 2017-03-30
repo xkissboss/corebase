@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using common.CSRedis;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -11,12 +12,22 @@ namespace common.Mysql.Utils
         /// <summary>
         /// 数据库连接字符串
         /// </summary>
-        public static readonly string MySqlConn =
-                 "server=127.0.0.1;database=blog;uid=root;pwd=root;charset='utf8'";
+        private static string _connectonString;
+
+
+        public static string ConnectionString
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(_connectonString))
+                    _connectonString = RedisHelper.Get("connection_mysql");
+                return _connectonString;
+            }
+        }
 
         public static MySqlConnection GetOpenConnection()
         {
-            MySqlConnection conn = new MySqlConnection(MySqlConn);
+            MySqlConnection conn = new MySqlConnection(ConnectionString);
             return conn;
         }
 
