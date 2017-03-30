@@ -7,6 +7,7 @@ using Microsoft.Extensions.Logging;
 using db.BLL;
 using corebase.Util;
 using db.Model;
+using common.CSRedis;
 
 namespace corebase.Controllers
 {
@@ -25,7 +26,7 @@ namespace corebase.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-
+            RedisHelper.Set("hello", "world");
             return new string[] { "value1", "value2" };
 
         }
@@ -34,11 +35,18 @@ namespace corebase.Controllers
         [HttpGet("{id}")]
         public APIReturn Get(long id)
         {
+
+            string hello = RedisHelper.Get("hello");
+
             if (id < 1)
                 return APIReturn.BuildFail("id正确");
-            Student s = _studentBLL.FindById(id);
+            Student s = RedisHelper.GetEntity<Student>(id.ToString());
+            if (s != null)
+                return APIReturn.BuildSuccess(s);
+            s = _studentBLL.FindById(id);
             if (s == null)
                 return APIReturn.BuildFail("记录不存在");
+            RedisHelper.SetEntity<Student>(s.Sid.ToString(), s);
             return APIReturn.BuildSuccess(s);
         }
 

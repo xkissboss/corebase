@@ -15,6 +15,7 @@ using db.BLL.Impl;
 using NLog.Extensions.Logging;
 using System.Text;
 using Swashbuckle.AspNetCore.Swagger;
+using common.CSRedis;
 
 namespace corebase
 {
@@ -47,6 +48,7 @@ namespace corebase
 
             services.AddScoped<IStudentBLL, StudentBLL>();
 
+            RedisHelper.InitializeConfiguration(Configuration);
 
             if (this.Env.IsDevelopment())
             {
